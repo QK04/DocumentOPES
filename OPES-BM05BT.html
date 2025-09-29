@@ -4254,41 +4254,32 @@ tbody tr:last-child td {
       </tr>
       <tr>
         <td>1</td>
-        <td colspan="3" class="no-border">Khấu hao phụ tùng, vật tư thay thế:</td>
-        <td></td>
+        <td colspan="4" >Khấu hao phụ tùng, vật tư thay thế:</td>
         <td>{{amountDepreciation}}</td>
-        <td></td>
-        <td>VND</td>
+        <td colspan="4">VNĐ</td>
       </tr>
       <tr>
         <td>2</td>
-        <td colspan="3" class="no-border">Giảm giá phụ tùng thay thế:</td>
-        <td></td>
+        <td colspan="4">Giảm giá phụ tùng thay thế:</td>
         <td>{{amountDiscountParts}}</td>
-        <td></td>
-        <td>VNĐ</td>
+        <td colspan="4">VNĐ</td>
       </tr>
       <tr>
         <td>3</td>
-        <td colspan="3" class="no-border">Giảm giá chi phí sửa chữa:</td>
-        <td></td>
+        <td colspan="4">Giảm giá chi phí sửa chữa:</td>
         <td>{{amountDiscountLabor}}</td>
-        <td></td>
-        <td>VNĐ</td>
+        <td colspan="4">VNĐ</td>
       </tr>
       <tr>
         <td>4</td>
-        <td colspan="3" class="no-border" >Giảm giá sơn:</td>
-        <td></td>
+        <td colspan="4">Giảm giá sơn:</td>
         <td>{{amountDiscountOther}}</td>
-        <td></td>
-        <td>VNĐ</td>
+        <td colspan="4">VNĐ</td>
       </tr>
       <tr>
         <td colspan="5" ><span class="content01"> TỔNG KHẤU HAO, GIẢM GIÁ (1+2+3+4): </span></td>
         <td><b class="text-center">{{sumTotalDiscount}}</b></td>
-        <td></td>
-        <td>VND</td>
+        <td colspan="4">VNĐ</td>
       </tr>
     </tbody>
     <tbody>
@@ -4300,35 +4291,30 @@ tbody tr:last-child td {
         <td>5</td>
         <td colspan="4">Giảm trừ theo tỉ lệ tham gia:</td>
         <td>{{amountResponsibility}}</td>
-        <td></td>
-        <td>VND</td>
+        <td colspan="4">VNĐ</td>
       </tr>
       <tr>
         <td>6</td>
         <td colspan="4">Khấu trừ theo ĐKBS:</td>
         <td>{{amountAddOnDed}}</td>
-        <td></td>
-        <td>VNĐ</td>
+        <td colspan="4">VNĐ</td>
       </tr>
       <tr>
         <td>7</td>
         <td colspan="4">Giảm trừ bồi thường:</td>
         <td>{{amountReduction}}</td>
-        <td></td>
-        <td>VNĐ</td>
+        <td colspan="4">VNĐ</td>
       </tr>
       <tr>
         <td>8</td>
         <td colspan="4">Khấu trừ theo vụ tổn thất:</td>
         <td>{{amountExemption}}</td>
-        <td></td>
-        <td>VNĐ</td>
+        <td colspan="4">VNĐ</td>
       </tr>
       <tr>
         <td colspan="5" > <span class="content01">TỔNG KHẤU TRỪ, GIẢM TRỪ (5+6+7+8):</span>        </td>
         <td><b class="text-center">{{sumTotal}}</b></td>
-        <td></td>
-        <td>VND</td>
+        <td colspan="4">VNĐ</td>
       </tr>
     </tbody>
     {{#if (isTruthy otherDetails)}}
@@ -4343,8 +4329,7 @@ tbody tr:last-child td {
           <td>1</td>
           <td colspan="4">Chi phí cầu xe tại hiện trường:</td>
           <td>{{amountCostApprove}}</td>
-          <td></td>
-          <td>VNĐ</td>
+          <td colspan="4">VNĐ</td>
         </tr>
         {{/if}}
 
@@ -4353,8 +4338,7 @@ tbody tr:last-child td {
           <td>2</td>
           <td colspan="4">Chi phí kéo xe:</td>
           <td>{{amountCostApprove}}</td>
-          <td></td>
-          <td>VNĐ</td>
+          <td colspan="4">VNĐ</td>
         </tr>
         {{/if}}
 
@@ -4363,8 +4347,7 @@ tbody tr:last-child td {
           <td>3</td>
           <td colspan="4">Chí phí khác:</td>
           <td>{{amountCostApprove}}</td>
-          <td></td>
-          <td>VNĐ</td>
+          <td colspan="4">VNĐ</td>
         </tr>
         {{/if}}
       {{/forEach}}
@@ -4379,32 +4362,28 @@ tbody tr:last-child td {
         <td>1</td>
         <td colspan="4">Chi phí cầu xe tại hiện trường:</td>
         <td>0</td>
-        <td></td>
-        <td>VNĐ</td>
+        <td colspan="4">VNĐ</td>
       </tr>
        
       <tr>
         <td>2</td>
         <td colspan="4">Chi phí kéo xe:</td>
         <td>0</td>
-        <td></td>
-        <td>VNĐ</td>
+        <td colspan="4">VNĐ</td>
       </tr>
 
       <tr>
         <td>3</td>
         <td colspan="4">Chí phí khác:</td>
         <td>0</td>
-        <td></td>
-        <td>VNĐ</td>
+        <td colspan="4">VNĐ</td>
       </tr>
       {{/if}}
       
       <tr class="daumucbang">
         <td colspan=5; class="thembang01">TỔNG SỐ TIỀN (I-II-III+IV) CHƯA VAT:</td>
         <td><b class="text-center">{{amountTotalInsurance}}</b></td>
-        <td></td>
-        <td>VNĐ</td>
+        <td colspan="4">VNĐ</td>
       </tr>
       <!-- <tr>
         <td colspan="5">Thuế VAT:</td>
