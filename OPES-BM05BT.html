@@ -3616,7 +3616,7 @@ button.swiper-pagination-bullet {
 }
 
 .no-border {
-  border-right: 1px solid #ffffff !important;   
+  border-right: 1px solid #ffffff !important; 
 }
 
 .text-center {
@@ -3624,7 +3624,6 @@ button.swiper-pagination-bullet {
   align-items: center;  
   justify-content: center;
 }
-
 
 /*  */
 /* 
@@ -3698,6 +3697,9 @@ tbody tr:nth-child(1) th {
 }
 
 
+.sumTotal {
+  text-align: center !important;
+}
 
 /* Căn chỉnh nội dung trong một số cột */
 td:nth-child(2) { 
@@ -4040,8 +4042,7 @@ tbody tr:last-child td {
                         <div class="opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1840">
                         
                           <div class="opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1839">
-
-                            <table>
+                            <table id="replacement-repair-table" border="1" cellspacing="0" cellpadding="0"> 
                               <thead>
                                 <tr>
                                   <th class="daumucbang">I</th>
@@ -4070,19 +4071,19 @@ tbody tr:last-child td {
                                   <td></td>
                                 </tr>
                                 {{#forEach lossDetails}}
-                                {{!-- Chỉ hiển thị hạng mục nếu số tiền khác 0 --}}
-                                {{#unless (and (eq this.partAmountGara '0') (eq this.partAmountApprove '0'))}}
-                                  <tr>
-                                    <td>{{index}}</td>
-                                    <td>{{lossCategory}}</td>
-                                    <td></td>
-                                    <td>{{itemCount}}</td>
-                                    <td>{{partAmountGara}}</td>
-                                    <td>{{partAmountApprove}}</td>
-                                    <td>{{depreciationRate}}</td>
-                                    <td>{{note}}</td>
-                                  </tr>
-                                {{/unless}}
+                                  {{!-- Chỉ hiển thị hạng mục nếu số tiền khác 0 --}}
+                                  {{#unless (and (eq this.partAmountGara '0') (eq this.partAmountApprove '0'))}}
+                                    <tr>
+                                      <td>{{index}}</td>
+                                      <td>{{lossCategory}}</td>
+                                      <td></td>
+                                      <td>{{itemCount}}</td>
+                                      <td>{{partAmountGara}}</td>
+                                      <td>{{partAmountApprove}}</td>
+                                      <td>{{depreciationRate}}</td>
+                                      <td>{{note}}</td>
+                                    </tr>
+                                  {{/unless}}
                               {{/forEach}}
                                 <tr>
                                   <td><b>B</b></td>
@@ -4139,8 +4140,8 @@ tbody tr:last-child td {
                                 
                                 <tr>
                                   <td colspan="4"><span class="content01">TỔNG CHI PHÍ (A+B+C)</span>:</td>
-                                  <td>{{sumTotalGara}}</td>
-                                  <td>{{sumTotalApprove}}</td>
+                                  <td class="sumTotal">{{sumTotalGara}}</td>
+                                  <td class="sumTotal">{{sumTotalApprove}}</td>
                                   <td></td>
                                   <td>Chưa VAT</td>
                                 </tr>
@@ -4254,8 +4255,6 @@ tbody tr:last-child td {
       <tr>
         <td>1</td>
         <td colspan="3" class="no-border">Khấu hao phụ tùng, vật tư thay thế:</td>
-        
-        
         <td></td>
         <td>{{amountDepreciation}}</td>
         <td></td>
@@ -4264,7 +4263,6 @@ tbody tr:last-child td {
       <tr>
         <td>2</td>
         <td colspan="3" class="no-border">Giảm giá phụ tùng thay thế:</td>
-        
         <td></td>
         <td>{{amountDiscountParts}}</td>
         <td></td>
@@ -4273,7 +4271,6 @@ tbody tr:last-child td {
       <tr>
         <td>3</td>
         <td colspan="3" class="no-border">Giảm giá chi phí sửa chữa:</td>
-        
         <td></td>
         <td>{{amountDiscountLabor}}</td>
         <td></td>
@@ -4282,7 +4279,6 @@ tbody tr:last-child td {
       <tr>
         <td>4</td>
         <td colspan="3" class="no-border" >Giảm giá sơn:</td>
-        
         <td></td>
         <td>{{amountDiscountOther}}</td>
         <td></td>
@@ -4303,7 +4299,6 @@ tbody tr:last-child td {
       <tr>
         <td>5</td>
         <td colspan="4">Giảm trừ theo tỉ lệ tham gia:</td>
-        
         <td>{{amountResponsibility}}</td>
         <td></td>
         <td>VND</td>
@@ -4311,7 +4306,6 @@ tbody tr:last-child td {
       <tr>
         <td>6</td>
         <td colspan="4">Khấu trừ theo ĐKBS:</td>
-        
         <td>{{amountAddOnDed}}</td>
         <td></td>
         <td>VNĐ</td>
@@ -4325,7 +4319,7 @@ tbody tr:last-child td {
       </tr>
       <tr>
         <td>8</td>
-        <td colspan="4">Khấu trừ theo vụ tổn thất</td>
+        <td colspan="4">Khấu trừ theo vụ tổn thất:</td>
         <td>{{amountExemption}}</td>
         <td></td>
         <td>VNĐ</td>
@@ -4344,46 +4338,46 @@ tbody tr:last-child td {
         <th colspan="8">CHI PHÍ CẦU KÉO KHÁC:</th>
       </tr>
       {{#forEach otherDetails}} 
-      {{#if (eq oderNo '1')}}   
-      <tr>
-        <td>1</td>
-        <td colspan="4">Chi phí cầu xe tại hiện trường:</td>
-        
-        <td>{{amountCostApprove}}</td>
-        <td></td>
-        <td>VNĐ</td>
-      </tr>
-      {{/if}}
-      {{#if (eq oderNo '2')}}  
-      <tr>
-        <td>2</td>
-        <td colspan="4">Chi phí kéo xe:</td>
-        
-        <td>{{amountCostApprove}}</td>
-        <td></td>
-        <td>VNĐ</td>
-      </tr>
-      {{/if}}
-      {{#if (eq oderNo '3')}}  
-      <tr>
-        <td>3</td>
-        <td colspan="4">Chí phí khác:</td>
-        
-        <td>{{amountCostApprove}}</td>
-        <td></td>
-        <td>VNĐ</td>
-      </tr>
-      {{/if}}
+        {{#if (eq oderNo '1')}}   
+        <tr>
+          <td>1</td>
+          <td colspan="4">Chi phí cầu xe tại hiện trường:</td>
+          <td>{{amountCostApprove}}</td>
+          <td></td>
+          <td>VNĐ</td>
+        </tr>
+        {{/if}}
+
+        {{#if (eq oderNo '2')}}  
+        <tr>
+          <td>2</td>
+          <td colspan="4">Chi phí kéo xe:</td>
+          <td>{{amountCostApprove}}</td>
+          <td></td>
+          <td>VNĐ</td>
+        </tr>
+        {{/if}}
+
+        {{#if (eq oderNo '3')}}  
+        <tr>
+          <td>3</td>
+          <td colspan="4">Chí phí khác:</td>
+          <td>{{amountCostApprove}}</td>
+          <td></td>
+          <td>VNĐ</td>
+        </tr>
+        {{/if}}
       {{/forEach}}
+
       {{else}}   
       <tr>
         <th>IV</th>
         <th colspan="8">CHI PHÍ CẦU KÉO KHÁC:</th>
       </tr>  
+
       <tr>
         <td>1</td>
         <td colspan="4">Chi phí cầu xe tại hiện trường:</td>
-        
         <td>0</td>
         <td></td>
         <td>VNĐ</td>
@@ -4392,22 +4386,20 @@ tbody tr:last-child td {
       <tr>
         <td>2</td>
         <td colspan="4">Chi phí kéo xe:</td>
-        
         <td>0</td>
         <td></td>
         <td>VNĐ</td>
       </tr>
-      
+
       <tr>
         <td>3</td>
         <td colspan="4">Chí phí khác:</td>
-        
         <td>0</td>
         <td></td>
         <td>VNĐ</td>
       </tr>
-      
       {{/if}}
+      
       <tr class="daumucbang">
         <td colspan=5; class="thembang01">TỔNG SỐ TIỀN (I-II-III+IV) CHƯA VAT:</td>
         <td><b class="text-center">{{amountTotalInsurance}}</b></td>
@@ -4463,5 +4455,37 @@ tbody tr:last-child td {
       </div>
     </div>
   
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const table = document.getElementById("replacement-repair-table");
+      if (!table) return;
 
-</body></html>
+      const rows = table.querySelectorAll("tbody tr");
+      let counter = 1;
+
+      rows.forEach(row => {
+        const cells = row.querySelectorAll("td");
+        if (cells.length > 0) {
+          const firstCell = cells[0].innerText.trim();
+
+          // Nếu là dòng header nhóm (A, B, C) → reset counter, không đánh số
+          if (["A", "B", "C"].includes(firstCell)) {
+            counter = 1;
+          }
+          // Nếu là dòng dữ liệu (số hoặc trống) → xử lý
+          else if (!isNaN(firstCell) || firstCell === "") {
+            const gara = parseFloat(cells[4].innerText.replace(/[^0-9.-]/g, "")) || 0;
+            const approve = parseFloat(cells[5].innerText.replace(/[^0-9.-]/g, "")) || 0;
+
+            if (gara === 0 && approve === 0) {
+              row.remove(); // bỏ nếu cả 2 bằng 0
+            } else {
+              cells[0].innerText = counter++; // đánh lại số thứ tự
+            }
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
