@@ -1,72 +1,11 @@
 <!DOCTYPE html>
-<html lang="english"><head>
+<html lang="english">
+  <head>
     <title>OPES-BM05BT</title>
     <meta property="og:title" content="OPES-BM05BT-xut-Phng-n-sa-cha-Xe-c-gii - exported project">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta property="twitter:card" content="summary_large_image">
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
   <style>
       html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
     
@@ -3616,7 +3555,11 @@ button.swiper-pagination-bullet {
   height: 59px;
 }
 
-
+.text-center {
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+}
 /*  */
 /* 
 table {
@@ -3769,12 +3712,11 @@ tbody tr:last-child td {
       }
     }
 
-</style></head>
-  <body>
-    
-    <div>
-      
+</style>
+</head>
 
+  <body>
+    <div>
       <div class="opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-container">
         <div class="opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-opesbm05b-txut-phngnsacha-xecgii">
           <div class="opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1846">
@@ -4115,7 +4057,7 @@ tbody tr:last-child td {
                                 
                                 <tr>
                                   <td colspan="4"><span class="content01">TỔNG CHI PHÍ (A+B+C)</span>:</td>
-                                  <td>{{sumTotalGara}}</td>
+                                  <td><p class="text-center">{{sumTotalGara}}</p></td>
                                   <td>{{sumTotalApprove}}</td>
                                   <td></td>
                                   <td>Chưa VAT</td>
@@ -4229,46 +4171,32 @@ tbody tr:last-child td {
       </tr>
       <tr>
         <td>1</td>
-        <td colspan="3">Khấu hao phụ tùng, vật tư thay thế:</td>
-        
-        
-        <td></td>
+        <td colspan="4">Khấu hao phụ tùng, vật tư thay thế:</td>
         <td>{{amountDepreciation}}</td>
-        <td></td>
-        <td>VND</td>
+        <td colspan="4">VND</td>
       </tr>
       <tr>
         <td>2</td>
-        <td colspan="3">Giảm giá phụ tùng thay thế:</td>
-        
-        <td></td>
+        <td colspan="4">Giảm giá phụ tùng thay thế:</td>
         <td>{{amountDiscountParts}}</td>
-        <td></td>
-        <td>VNĐ</td>
+        <td colspan="4">VNĐ</td>
       </tr>
       <tr>
         <td>3</td>
-        <td colspan="3">Giảm giá chi phí sửa chữa:</td>
-        
-        <td></td>
+        <td colspan="4">Giảm giá chi phí sửa chữa:</td>
         <td>{{amountDiscountLabor}}</td>
-        <td></td>
-        <td>VNĐ</td>
+        <td colspan="4">VNĐ</td>
       </tr>
       <tr>
         <td>4</td>
-        <td colspan="3">Giảm giá sơn:</td>
-        
-        <td></td>
+        <td colspan="4">Giảm giá sơn:</td>
         <td>{{amountDiscountOther}}</td>
-        <td></td>
-        <td>VNĐ</td>
+        <td colspan="4">VNĐ</td>
       </tr>
       <tr>
         <td colspan="5" ><span class="content01"> TỔNG KHẤU HAO, GIẢM GIÁ (1+2+3+4): </span></td>
-        <td><b>{{sumTotalDiscount}}</b></td>
-        <td></td>
-        <td>VND</td>
+        <td><b class="text-center">{{sumTotalDiscount}}</b></td>
+        <td colspan="4">VND</td>
       </tr>
     </tbody>
     <tbody>
@@ -4279,38 +4207,31 @@ tbody tr:last-child td {
       <tr>
         <td>5</td>
         <td colspan="4">Giảm trừ theo tỉ lệ tham gia:</td>
-        
         <td>{{amountResponsibility}}</td>
-        <td></td>
-        <td>VND</td>
+        <td colspan="4">VND</td>
       </tr>
       <tr>
         <td>6</td>
         <td colspan="4">Khấu trừ theo ĐKBS:</td>
-        
         <td>{{amountAddOnDed}}</td>
-        <td></td>
-        <td>VNĐ</td>
+        <td colspan="4">VNĐ</td>
       </tr>
       <tr>
         <td>7</td>
         <td colspan="4">Giảm trừ bồi thường:</td>
         <td>{{amountReduction}}</td>
-        <td></td>
-        <td>VNĐ</td>
+        <td colspan="4">VNĐ</td>
       </tr>
       <tr>
         <td>8</td>
-        <td colspan="4">Khấu trừ theo vụ tổn thất</td>
+        <td colspan="4">Khấu trừ theo vụ tổn thất:</td>
         <td>{{amountExemption}}</td>
-        <td></td>
-        <td>VNĐ</td>
+        <td colspan="4">VNĐ</td>
       </tr>
       <tr>
         <td colspan="5" > <span class="content01">TỔNG KHẤU TRỪ, GIẢM TRỪ (5+6+7+8):</span>        </td>
-        <td><b>{{sumTotal}}</b></td>
-        <td></td>
-        <td>VND</td>
+        <td><b class="text-center">{{sumTotal}}</b></td>
+        <td colspan="4">VND</td>
       </tr>
     </tbody>
     {{#if (isTruthy otherDetails)}}
@@ -4324,30 +4245,24 @@ tbody tr:last-child td {
       <tr>
         <td>1</td>
         <td colspan="4">Chi phí cầu xe tại hiện trường:</td>
-        
         <td>{{amountCostApprove}}</td>
-        <td></td>
-        <td>VNĐ</td>
+        <td colspan="4">VNĐ</td>
       </tr>
       {{/if}}
       {{#if (eq oderNo '2')}}  
       <tr>
         <td>2</td>
         <td colspan="4">Chi phí kéo xe:</td>
-        
         <td>{{amountCostApprove}}</td>
-        <td></td>
-        <td>VNĐ</td>
+        <td colspan="4">VNĐ</td>
       </tr>
       {{/if}}
       {{#if (eq oderNo '3')}}  
       <tr>
         <td>3</td>
         <td colspan="4">Chí phí khác:</td>
-        
         <td>{{amountCostApprove}}</td>
-        <td></td>
-        <td>VNĐ</td>
+        <td colspan="4">VNĐ</td>
       </tr>
       {{/if}}
       {{/forEach}}
@@ -4359,48 +4274,39 @@ tbody tr:last-child td {
       <tr>
         <td>1</td>
         <td colspan="4">Chi phí cầu xe tại hiện trường:</td>
-        
         <td>0</td>
-        <td></td>
-        <td>VNĐ</td>
+        <td colspan="4">VNĐ</td>
       </tr>
        
       <tr>
         <td>2</td>
         <td colspan="4">Chi phí kéo xe:</td>
-        
         <td>0</td>
-        <td></td>
-        <td>VNĐ</td>
+        <td colspan="4">VNĐ</td>
       </tr>
       
       <tr>
         <td>3</td>
         <td colspan="4">Chí phí khác:</td>
-        
         <td>0</td>
-        <td></td>
-        <td>VNĐ</td>
+        <td colspan="4">VNĐ</td>
       </tr>
       
       {{/if}}
       <tr class="daumucbang">
         <td colspan=5; class="thembang01">TỔNG SỐ TIỀN (I-II-III+IV):</td>
-        <td><b>{{amountTotalInsurance}}</b></td>
-        <td></td>
-        <td>VNĐ</td>
+        <td><b class="text-center">{{amountTotalInsurance}}</b></td>
+        <td colspan="4">VNĐ</td>
       </tr>
       <tr>
         <td colspan="5">Thuế VAT:</td>
-        <td>{{amountTotalTax}}</td>
-        <td></td>
-        <td>VND</td>
+        <td><p class="text-center">{{amountTotalTax}}</p></td>
+        <td colspan="4">VND</td>
       </tr>
       <tr class="daumucbang">
         <td colspan="5" class="daumucbang"> <span class="content01">TỔNG CỘNG:</span></td>
-        <td ><b>{{amountTotalInsVat}}</b></td>
-        <td ></td>
-        <td ></td>
+        <td><b class="text-center">{{amountTotalInsVat}}</b></td>
+        <td colspan="4">VND</td>
       </tr>
       <tr>
         <td colspan="8" ><span class="content02"> <i>Bằng chữ: {{amountTotalInsVatText}} đồng</i></span> </td> 
