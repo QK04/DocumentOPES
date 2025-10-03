@@ -806,6 +806,9 @@ button.swiper-pagination-bullet {
   line-height: normal;
   font-stretch: normal;
   text-decoration: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 .opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1868 {
   gap: 23px;
@@ -1380,30 +1383,37 @@ button.swiper-pagination-bullet {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 750px;
-  margin-left: -110px;
+  width: 700px;
 }
 .opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame13751 {
   gap: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 750px;
+  width: 700px;
+}
 
+.opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1375100 {
+  gap: 10px;
+  display: flex;
+  margin-left: 10px;
+  width: 700px;
 }
 .opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame13750 {
   gap: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: -130px;
+  margin-top: 20px;
+  margin-right: 10px;
 }
 .opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame137501 {
   gap: 10px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: -690px;
+  align-items: flex-start;   
+  justify-content: flex-start; 
+  flex: 1;
+  margin-left: 0;
 }
 .opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-text057 {
   color: rgba(0, 0, 0, 1);
@@ -1430,15 +1440,21 @@ button.swiper-pagination-bullet {
   line-height: normal;
   font-stretch: normal;
   text-decoration: none;
-  text-align: end;
+  margin-left: 450px;
 }
 .opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-text058 {
   font-weight: 400;
 }
+
+.opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-text058000 {
+  font-weight: 400;
+}
+
 .opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame18331 {
   gap: 6px;
+  width: 720px;
   display: flex;
-  padding: 0 0 0 32px;
+  padding: 0 32px 0 32px;
   align-items: flex-start;
 }
 .opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-text061 {
@@ -1467,12 +1483,17 @@ button.swiper-pagination-bullet {
   text-decoration: none;
 }
 .opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1840 {
-  gap: 14px;
+  gap: 11px;
   width: 100%;
   height: auto;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
+}
+
+.opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1840  table{
+  position: relative;
+  margin-left: 85px;
 }
 .opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1378 {
   gap: 14px;
@@ -1496,6 +1517,8 @@ button.swiper-pagination-bullet {
 .opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1839 {
   gap: 1px;
   display: flex;
+  width: 73%;
+  height: auto;
   align-items: flex-start;
   flex-direction: column;
 }
@@ -3650,15 +3673,10 @@ button.swiper-pagination-bullet {
   font-stretch: normal;
   text-decoration: none;
 }
-.opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1870 {
-  gap: 10px;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
+
 .opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-image29 {
-  width: 802px;
-  height: 59px;
+    width: 104%;   
+    height: 101%;
 }
 
 .text-center {
@@ -3777,7 +3795,10 @@ tbody tr:last-child td {
 }
 @media print {
       body {
-        margin: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 0;
+        margin-bottom: 0;
         padding: 0;
       }
       .table{
@@ -3791,34 +3812,25 @@ tbody tr:last-child td {
         margin: 0;
         padding: 0;
       }
-      .opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1869{
-        margin-right: 10px;
-      }
 
-      .opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1837 {
-        break-inside: avoid;
-        /* Không cắt nội dung bên trong khi in */
-        page-break-inside: avoid;
-        /* Ngăn ngừa việc cắt trang bên trong phần tử */
-      }
-
-      .opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1377 {
-        break-inside: avoid;
-        /* Không cắt nội dung bên trong khi in */
-        page-break-inside: avoid;
-      }
-
-
+      .opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1837,
+      .opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1377,
       .opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1379 {
-        break-inside: avoid;
-        /* Không cắt nội dung bên trong khi in */
-        page-break-inside: avoid;
+        break-inside: auto !important;
+        page-break-inside: auto !important;
+      }
+
+      /* Với container flex: chuyển về block khi in */
+      .opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1840,
+      .opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1839 {
+        display: block !important;
       }
 
       .opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1870 {
         position: fixed;
         bottom: 0;
-        margin-top: 30px;
+        margin: 0;
+        
       }
     }
 
@@ -3869,6 +3881,16 @@ tbody tr:last-child td {
               <div class="opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1869">
                 <span class="opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-text015">
                   <span>Hồ sơ bồi thường số: {{claimNo}} </span>
+                  <span>
+                    {{#if (isTruthy submitDay)}}
+                    <span
+                      >Ngày {{submitDay}} tháng {{submitMonth}} năm
+                      {{submitYear}}</span
+                    >
+                    {{else}}
+                    <span>Ngày ........ tháng ......... năm ..........</span>
+                    {{/if}}
+                  </span>
                 </span>
                 <div class="opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1868">
                   <span class="opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-text017">
@@ -4059,15 +4081,7 @@ tbody tr:last-child td {
                         <div class="opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame18331">
                           <span class="opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-text061">
                             <span>- Căn cứ Thông báo tai nạn và Yêu cầu bồi thường của Quý khách hàng về vụ tổn thất của xe ô tô BKS {{vehiclePlateNoNormal}}, xảy ra ngày {{accidentDateTime}}.</span>
-                          </span>
-                          <span class="opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-text063">
-                            <span>
-                              
-                            </span>
-                          </span>
-                        </div>
-                        <div class="opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1378">
-                          <span class="opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-text065">
+                            <br>
                             <span>
                               - Căn cứ vào biên bản giám định thiệt hại và báo giá của Đơn vị sửa chữa {{garageNameSelected}}.  
                               <br>
@@ -4150,9 +4164,9 @@ tbody tr:last-child td {
                               
                               </div>
                             </div> -->
-                            <div class="opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame13751">
+                            <div class="opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1375100">
                               <span class="opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-text057">
-                                <span class="opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-text058">
+                                <span class="opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-text05800">
                                   Công ty Cổ phần Bảo hiểm OPES trân trọng gửi quý Khách hàng, đơn vị sửa chữa phương án sửa chữa xác định số tiền tổn thất trong vụ tai nạn như sau:
                                   <!-- <br>
                                   Căn cứ vào biên bản giám định thiệt hại xe ô tô; <br> 
@@ -4166,7 +4180,11 @@ tbody tr:last-child td {
                         
                           <div class="opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1839">
 
-                            <table>
+                            <table
+                              id="replacement-repair-table"
+                              border="1"
+                              cellspacing="0"
+                              cellpadding="0">
                               <thead>
                                 <tr>
                                   <th class="daumucbang">I</th>
@@ -4194,7 +4212,10 @@ tbody tr:last-child td {
                                   <td></td>
                                   <td></td>
                                 </tr>
-                                {{#forEach lossDetails}}
+                                {{#forEach lossDetails}} {{!-- Chỉ hiển thị hạng
+                                mục nếu số tiền khác 0 --}} {{#unless (and (eq
+                                this.partAmountGara '0') (eq
+                                this.partAmountApprove '0'))}}
                                 <tr>
                                   <td>{{index}}</td>
                                   <td>{{lossCategory}}</td>
@@ -4205,7 +4226,7 @@ tbody tr:last-child td {
                                   <td>{{depreciationRate}}</td>
                                   <td>{{note}}</td>
                                 </tr>
-                                {{/forEach}}
+                                {{/unless}} {{/forEach}}
                                 <tr>
                                   <td><b>B</b></td>
                                   <td><b>HẠNG MỤC SỬA CHỮA</b></td>
@@ -4216,7 +4237,10 @@ tbody tr:last-child td {
                                   <td></td>
                                   <td></td>
                                 </tr>
-                                {{#forEach lossDetails}}
+                                {{#forEach lossDetails}} {{!-- Chỉ hiển thị hạng
+                                mục nếu số tiền khác 0 --}} {{#unless (and (eq
+                                this.laborAmountGara '0') (eq
+                                this.laborAmountApprove '0'))}}
                                 <tr>
                                   <td>{{index}}</td>
                                   <td>{{lossCategory}}</td>
@@ -4227,7 +4251,7 @@ tbody tr:last-child td {
                                   <td></td>
                                   <td>{{note}}</td>
                                 </tr>
-                                {{/forEach}}
+                                {{/unless}} {{/forEach}}
                                 
                                 <tr>
                                   <td><b>C</b></td>
@@ -4240,7 +4264,10 @@ tbody tr:last-child td {
                                   <td></td>
                                 </tr>
                                 
-                                {{#forEach lossDetails}}
+                                {{#forEach lossDetails}} {{!-- Chỉ hiển thị hạng
+                                mục nếu số tiền khác 0 --}} {{#unless (and (eq
+                                this.otherAmountGara '0') (eq
+                                this.othertAmountApprove '0'))}}
                                 <tr>
                                   <td>{{index}}</td>
                                   <td>{{lossCategory}}</td>
@@ -4251,7 +4278,7 @@ tbody tr:last-child td {
                                   <td></td>
                                   <td>{{note}}</td>
                                 </tr>
-                                {{/forEach}}
+                                {{/unless}} {{/forEach}}
                                 
                                 <tr>
                                   <td colspan="4"><span class="content01">TỔNG CHI PHÍ (A+B+C)</span>:</td>
@@ -4517,11 +4544,11 @@ tbody tr:last-child td {
   </div>
   <div class="opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame13750">
     <span class="opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-text0570">
-      <span class="opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-text058" >
-        <i style="text-align: end;">
-           <p>......ngày.....tháng.....năm.....</p>
+      <span class="opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-text058000" >
+        <i>
+           <p style="position: relative; margin-left: 25px;">......ngày.....tháng.....năm.....</p>
         </i>
-          <b> Công ty Cổ phần Bảo hiểm OPES</b>
+          <b style="right: 70px;"> Công ty Cổ phần Bảo hiểm OPES</b>
          
         
       </span>
@@ -4573,5 +4600,38 @@ tbody tr:last-child td {
       </div>
     </div>
   
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const table = document.getElementById("replacement-repair-table");
+        if (!table) return;
 
+        const rows = table.querySelectorAll("tbody tr");
+        let counter = 1;
+
+        rows.forEach((row) => {
+          const cells = row.querySelectorAll("td");
+          if (cells.length > 0) {
+            const firstCell = cells[0].innerText.trim();
+
+            // Nếu là dòng header nhóm (A, B, C) → reset counter, không đánh số
+            if (["A", "B", "C"].includes(firstCell)) {
+              counter = 1;
+            }
+            // Nếu là dòng dữ liệu (số hoặc trống) → xử lý
+            else if (!isNaN(firstCell) || firstCell === "") {
+              const gara =
+                parseFloat(cells[4].innerText.replace(/[^0-9.-]/g, "")) || 0;
+              const approve =
+                parseFloat(cells[5].innerText.replace(/[^0-9.-]/g, "")) || 0;
+
+              if (gara === 0 && approve === 0) {
+                row.remove(); // bỏ nếu cả 2 bằng 0
+              } else {
+                cells[0].innerText = counter++; // đánh lại số thứ tự
+              }
+            }
+          }
+        });
+      });
+    </script>
 </body></html>
