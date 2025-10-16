@@ -868,7 +868,7 @@
       .opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1846 {
         /* height: 1039.032470703125px; */
         display: flex;
-        padding: 50px 0 0;
+        padding: 20px 0 0;
         align-items: center;
         flex-shrink: 0;
         flex-direction: column;
@@ -1680,7 +1680,7 @@
 
       .opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-text063 {
         color: rgba(0, 0, 0, 1);
-        width: 500px;
+        width: fit-content;
         height: auto;
         font-size: 16px;
         font-style: Regular;
@@ -4123,7 +4123,6 @@ th {
         border-collapse: collapse;
         font-family: Segoe UI;
         font-size: 13px;
-        margin-bottom: 10px;
         /* Sử dụng font Arial hoặc sans-serif tương tự */
         page-break-inside: avoid;
         /* Tránh cắt bảng giữa 2 trang */
@@ -4209,6 +4208,10 @@ th {
       }
 
       @media print {
+        @page {
+          margin: 30px 0 0 0;
+        }
+
         body {
           margin: 0;
           padding: 0;
@@ -4219,7 +4222,7 @@ th {
         }
 
         .bang2 {
-          max-height: 150px;
+          margin-top: 20px;
           break-inside: avoid;
           page-break-inside: avoid;
         }
@@ -4241,6 +4244,11 @@ th {
           display: block;
           height: 40px;
           /* cách top */
+        }
+
+        .opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1375 {
+          break-inside: avoid;
+          page-break-inside: avoid;
         }
 
         .footer {
@@ -4981,7 +4989,7 @@ th {
         );
 
         // Chiều cao của 1 trang A4 khi in (ở độ phân giải 96dpi ≈ 1122px)
-        const pageHeight = 1122; // Có thể tinh chỉnh tùy trình duyệt
+        const pageHeight = 1092; 
 
         // Tính số trang
         const totalPages = Math.ceil(totalHeight / pageHeight);
@@ -4991,7 +4999,7 @@ th {
 
         // Đặt footer đúng đáy trang cuối
         const footerHeight = footer.offsetHeight;
-        footer.style.top = `${lastPageStart + pageHeight - footerHeight + 24}px`;
+        footer.style.top = `${lastPageStart + pageHeight - footerHeight + 25}px`;
 
         // Nếu nội dung ngắn (chỉ 1 trang) → ép footer xuống cuối trang
         if (totalPages === 1) {
@@ -5006,9 +5014,6 @@ th {
         footer.style.top = "";
       });
     </script>
-
-
-
   </body>
 
 </html>

@@ -7,68 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta property="twitter:card" content="summary_large_image">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <style>
       html {
         line-height: 1.15;
@@ -1762,7 +1700,7 @@
 
       .opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1840 table {
         position: relative;
-        margin-left: 85px;
+        margin-left: 60px;
       }
 
       .opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1378 {
@@ -4175,7 +4113,7 @@ th {
 
 
       table {
-        width: 90%;
+        width: 100%;
         border-collapse: collapse;
         font-family: Segoe UI;
         font-size: 13px;
@@ -4248,11 +4186,12 @@ th {
       }
 
       @media print {
+        @page {
+          margin: 30px 0 0 0;
+        }
+
         body {
-          margin-left: 10px;
-          margin-right: 10px;
-          margin-top: 0;
-          margin-bottom: 0;
+          margin: 0;
           padding: 0;
         }
 
@@ -4260,9 +4199,22 @@ th {
           margin-top: 20px;
         }
 
+        .bang1 {
+          width: 100%;
+          page-break-inside: auto;
+        }
+
+        .bang1 tr,
+        .bang1 td,
+        .bang1 td {
+          page-break-inside: avoid;
+          page-break-after: auto;
+        }
+
         .bang2 {
           margin-top: 20px;
-          page-break-before: always;
+          break-inside: avoid;
+          page-break-inside: avoid;
         }
 
         .opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-opesbm05b-txut-phngnsacha-xecgii {
@@ -4287,7 +4239,6 @@ th {
           position: fixed;
           bottom: 0;
           margin: 0;
-
         }
       }
     </style>
@@ -4639,7 +4590,8 @@ th {
 
                           <div class="opesbm05bt-xut-phng-n-sa-cha-xe-c-gii-frame1839">
 
-                            <table id="replacement-repair-table" border="1" cellspacing="0" cellpadding="0">
+                            <table class="bang1" id="replacement-repair-table" border="1" cellspacing="0"
+                              cellpadding="0">
                               <thead>
                                 <tr>
                                   <th class="daumucbang">I</th>
